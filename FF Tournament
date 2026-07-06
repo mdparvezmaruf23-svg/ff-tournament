@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Tournament Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle, #1a0b2e 0%, #090214 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(20, 10, 35, 0.9);
+            border: 2px solid #ff4a5a;
+            box-shadow: 0 0 25px rgba(255, 74, 90, 0.5);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        .logo-text {
+            color: #ff4a5a;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(255, 74, 90, 0.7);
+        }
+        .subtitle {
+            color: #ffb830;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .info-box {
+            background: rgba(255, 74, 90, 0.1);
+            border: 1px dashed #ff4a5a;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .info-box h3 {
+            color: #ff4a5a;
+            margin-bottom: 8px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .info-box p span {
+            color: #ffb830;
+            font-weight: bold;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #a29bfe;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        input[type="text"], input[type="tel"] {
+            width: 100%;
+            padding: 12px;
+            background: #110724;
+            border: 1px solid #443266;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+        input:focus {
+            border-color: #ff4a5a;
+            box-shadow: 0 0 8px rgba(255, 74, 90, 0.5);
+            outline: none;
+        }
+        .btn-submit {
+            background: linear-gradient(90deg, #ff4a5a, #ff7675);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(255, 74, 90, 0.3);
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        .btn-submit:hover {
+            background: linear-gradient(90deg, #ff7675, #ff4a5a);
+            box-shadow: 0 0 20px rgba(255, 74, 90, 0.7);
+            transform: translateY(-2px);
+        }
+        footer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #6c5ce7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-text">FREE FIRE</div>
+        <div class="subtitle">Tournament Registration</div>
+        
+        <div class="info-box">
+            <h3>📢 ম্যাচ ডিটেইলস ও সময়সূচী:</h3>
+            <p>📅 খেলার তারিখ: <span>আগামী ১৫ তারিখ</span></p>
+            <p>⏰ খেলার সময়: <span>রাত ঠিক ৮:০০ টা</span></p>
+            <p>📞 যেকোনো প্রয়োজনে যোগাযোগ: <span>01313 213083</span></p>
+        </div>
+        
+        <form action="https://formspree.io/f/mjgqllep" method="POST">
+            <div class="form-group">
+                <label for="playerName">প্লেয়ারের নাম (In-Game Name)</label>
+                <input type="text" id="playerName" name="Player_Name" placeholder="আপনার গেমের নাম লিখুন" required>
+            </div>
+
+            <div class="form-group">
+                <label for="playerUid">গেম ইউআইডি (Game UID)</label>
+                <input type="text" id="playerUid" name="Game_UID" placeholder="যেমন: 123456789" required>
+            </div>
+
+            <div class="form-group">
+                <label for="playerMobile">মোবাইল নাম্বার (WhatsApp)</label>
+                <input type="tel" id="playerMobile" name="Mobile_Number" placeholder="01XXXXXXXXX" required>
+            </div>
+
+            <button type="submit" class="btn-submit">রেজিস্ট্রেশন নিশ্চিত করুন</button>
+        </form>
+        
+        <footer>
+            &copy; 2026 FF Tournament Gaming Zone. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
